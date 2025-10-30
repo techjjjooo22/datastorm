@@ -1,0 +1,118 @@
+{
+  "trained_at_utc": "2025-10-28T16:05:23Z",
+  "data_shape": {
+    "rows": 25000,
+    "columns": 32
+  },
+  "best_params": {
+    "classifier__C": 0.05
+  },
+  "holdout_metrics": {
+    "roc_auc": 0.874509890034817,
+    "average_precision": 0.7812733269534916,
+    "accuracy": 0.8424,
+    "balanced_accuracy": 0.8048888596103845,
+    "precision": 0.7007194244604317,
+    "recall": 0.7236255572065379,
+    "f1": 0.7119883040935673,
+    "brier_score": 0.1250900127857323
+  },
+  "holdout_confusion_matrix": [
+    [
+      3238,
+      416
+    ],
+    [
+      372,
+      974
+    ]
+  ],
+  "holdout_classification_report": "              precision    recall  f1-score   support\n\n           0     0.8970    0.8862    0.8915      3654\n           1     0.7007    0.7236    0.7120      1346\n\n    accuracy                         0.8424      5000\n   macro avg     0.7988    0.8049    0.8018      5000\nweighted avg     0.8441    0.8424    0.8432      5000\n",
+  "optimal_threshold": 0.65,
+  "cv_threshold_metrics": {
+    "f1": 0.7174759270641262,
+    "balanced_accuracy": 0.7952839834104084,
+    "recall": 0.6505665985509939,
+    "precision": 0.7997259648321534,
+    "accuracy": 0.8621,
+    "roc_auc": 0.8700261101112026,
+    "average_precision": 0.7667929792149242,
+    "brier_score": 0.12838551751718383
+  },
+  "holdout_threshold_metrics": {
+    "roc_auc": 0.874509890034817,
+    "average_precision": 0.7812733269534916,
+    "accuracy": 0.87,
+    "balanced_accuracy": 0.8028897883896091,
+    "f1": 0.731404958677686,
+    "precision": 0.8240223463687151,
+    "recall": 0.6575037147102526,
+    "brier_score": 0.1250900127857323
+  },
+  "threshold_confusion_matrix": [
+    [
+      3465,
+      189
+    ],
+    [
+      461,
+      885
+    ]
+  ],
+  "calibration": {
+    "metrics_threshold_0_50": {
+      "roc_auc": 0.87444279346211,
+      "average_precision": 0.7787155867640205,
+      "accuracy": 0.8706,
+      "balanced_accuracy": 0.7918031980259781,
+      "precision": 0.8591983556012333,
+      "recall": 0.6210995542347697,
+      "f1": 0.7210004312203536,
+      "brier_score": 0.1041048276058013
+    },
+    "confusion_matrix_threshold_0_50": [
+      [
+        3517,
+        137
+      ],
+      [
+        510,
+        836
+      ]
+    ],
+    "classification_report": "              precision    recall  f1-score   support\n\n           0     0.8734    0.9625    0.9158      3654\n           1     0.8592    0.6211    0.7210      1346\n\n    accuracy                         0.8706      5000\n   macro avg     0.8663    0.7918    0.8184      5000\nweighted avg     0.8695    0.8706    0.8633      5000\n",
+    "optimal_threshold": 0.35,
+    "training_metrics_at_optimal_threshold": {
+      "f1": 0.7206900010029085,
+      "balanced_accuracy": 0.7997001231938499,
+      "precision": 0.783129904097646,
+      "recall": 0.6674716700724503,
+      "accuracy": 0.86075,
+      "roc_auc": 0.8753137116967535,
+      "average_precision": 0.7726958519233853,
+      "brier_score": 0.1062879972169693
+    },
+    "holdout_metrics_at_optimal_threshold": {
+      "roc_auc": 0.87444279346211,
+      "average_precision": 0.7787155867640205,
+      "accuracy": 0.8668,
+      "balanced_accuracy": 0.8060970045650069,
+      "f1": 0.7316680096696213,
+      "precision": 0.7992957746478874,
+      "recall": 0.674591381872214,
+      "brier_score": 0.1041048276058013
+    },
+    "holdout_confusion_matrix_at_optimal_threshold": [
+      [
+        3426,
+        228
+      ],
+      [
+        438,
+        908
+      ]
+    ],
+    "calibrated_model_path": "X:\\DataStorm\\saved_models\\logistic_pd_model_calibrated.joblib"
+  },
+  "model_path": "X:\\DataStorm\\saved_models\\logistic_pd_model.joblib"
+}
